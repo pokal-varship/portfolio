@@ -70,7 +70,7 @@ const Resume = () => {
       {educationData && <Education />}
       <div className="flex justify-center mt-10">
         <button
-          className="w-full h-12 bg-red-500 rounded-lg text-base text-white tracking-wider uppercase hover:text-white hover:border-[1px] hover:border-white border-transparent active:border-white"
+          className="h-12 bg-red-500 rounded-lg text-base text-white tracking-wider uppercase hover:text-white hover:border-[1px] hover:border-white border-transparent active:border-white px-5"
           onClick={downloadPDF}
         >
           Download Resume
