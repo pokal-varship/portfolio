@@ -41,7 +41,9 @@ const Contact = () => {
         body: JSON.stringify({
           name: username,
           email: email,
-          message: `for varship pokal ${message}`,
+          message: `subject: ${subject},
+                    message: ${message}`,
+          isFromVarship: true,
         }),
       })
         .then((response) => {
@@ -169,7 +171,7 @@ const Contact = () => {
                 <button
                   onClick={handleSend}
                   className="w-full h-12 bg-red-500 rounded-lg text-base text-white tracking-wider uppercase hover:text-white hover:border-[1px] hover:border-white border-transparent active:border-white"
->
+                >
                   Send Message
                 </button>
               </div>
