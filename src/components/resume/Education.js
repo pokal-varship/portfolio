@@ -7,7 +7,7 @@ const Education = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { duration: 0.5 } }}
-      className="w-full flex flex-col lgl:flex-row gap-10 lgl:gap-20"
+      className="w-full flex flex-col gap-10 "
     >
       {/* part one */}
       <div>
@@ -15,7 +15,7 @@ const Education = () => {
           <p className="text-sm text-designColor tracking-[4px]">2019 - 2023</p>
           <h2 className="text-3xl md:text-4xl font-bold">Education Quality</h2>
         </div>
-        <div className="mt-6 lgl:mt-14 w-full h-[1000px] border-l-[6px] border-l-black border-opacity-30 flex flex-col gap-10">
+        <div className="w-full border-l-[6px]  border-l-black border-opacity-30">
           <ResumeCard
             title="Bachelor of Technology - BTech in Computer Engineering"
             subTitle="Uka Tarsadia University (2019 - 2023)"
