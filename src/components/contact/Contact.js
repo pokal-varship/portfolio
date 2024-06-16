@@ -65,9 +65,7 @@ const Contact = () => {
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
-          setErrMsg(
-            "There was an error while sending your message. Please try again later."
-          );
+          setErrMsg("You already sent a message");
         });
     }
   };
