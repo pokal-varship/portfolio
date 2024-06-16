@@ -1,6 +1,6 @@
-import React,{useState} from 'react'
-import Title from '../layouts/Title';
-import ContactLeft from './ContactLeft';
+import React, { useState } from "react";
+import Title from "../layouts/Title";
+import ContactLeft from "./ContactLeft";
 
 const Contact = () => {
   const [username, setUsername] = useState("");
@@ -63,11 +63,13 @@ const Contact = () => {
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
-          setErrMsg("There was an error while sending your message. Please try again later.");
+          setErrMsg(
+            "There was an error while sending your message. Please try again later."
+          );
         });
     }
   };
-  
+
   return (
     <section
       id="contact"
@@ -166,8 +168,8 @@ const Contact = () => {
               <div className="w-full">
                 <button
                   onClick={handleSend}
-                  className="w-full h-12 bg-[#141518] rounded-lg text-base text-gray-400 tracking-wider uppercase hover:text-white duration-300 hover:border-[1px] hover:border-designColor border-transparent"
-                >
+                  className="w-full h-12 bg-red-500 rounded-lg text-base text-white tracking-wider uppercase hover:text-white hover:border-[1px] hover:border-white border-transparent active:border-white"
+>
                   Send Message
                 </button>
               </div>
@@ -187,6 +189,6 @@ const Contact = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Contact
+export default Contact;

@@ -9,6 +9,7 @@ import {
   SiMongodb,
   SiMysql,
 } from "react-icons/si";
+import { GrGraphQl } from "react-icons/gr";
 
 const Media = () => {
   return (
@@ -46,6 +47,9 @@ const Media = () => {
           </a>
           <a href="https://expressjs.com/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
             <SiExpress />
+          </a>
+          <a href="https://graphql.org/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
+            <GrGraphQl />
           </a>
           <a href="https://www.mongodb.com/" target="_blank" rel="noopener noreferrer" className="bannerIcon">
             <SiMongodb />
