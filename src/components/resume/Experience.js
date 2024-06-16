@@ -29,6 +29,13 @@ const Experience = () => {
             des="With extensive experience in API development and implementation, I have contributed significantly to enhancing application functionality and security. My proficiency in Node.js, Express.js, and various security measures ensures robust and efficient backend solutions."
             url="https://www.digitattva.in/"
           />
+           <ResumeCard
+            title="Web Development Intern"
+            subTitle="surat,Gujrat,India. - (May 2022 - June 2022)"
+            result="Netsol IT Solutions Pvt. Ltd."
+            des="Learn Skills:- JavaScript, HTML5, Cascading Style Sheets (CSS)"
+            url="https://netsolitsolution.com/"
+          />
         </div>
       </div>
     </motion.div>
