@@ -1,11 +1,6 @@
 import React from "react";
 import Title from "../layouts/Title";
-import {
-  teamcamp,
-  anchorUSD,
-  aiyyna,
-  copro,
-} from "../../assets/index";
+import { teamcamp, anchorUSD, aiyyna, copro } from "../../assets/index";
 import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
@@ -14,7 +9,15 @@ const Projects = () => {
       title: "TeamCamp",
       des: "Simply project management, time tracking & invoice",
       role: "Backend integration",
-      tech: "Node js, Next js, TypeScript, One Signal, MongoDB Atlas, GraphQL, Firebase",
+      tech: [
+        "Node.js",
+        "Next.js",
+        "TypeScript",
+        "OneSignal",
+        "MongoDB Atlas",
+        "GraphQL",
+        "Firebase",
+      ],
       src: teamcamp,
       url: "https://www.teamcamp.app/",
     },
@@ -22,7 +25,7 @@ const Projects = () => {
       title: "Anchor USD",
       des: "Help to contact your bank within your bank track your all transaction",
       role: "Backend integration",
-      tech: "TypeScript, Next js, Graphql, One signal, Mongodb Atlas",
+      tech: ["TypeScript", "Next.js", "GraphQL", "OneSignal", "MongoDB Atlas"],
       src: anchorUSD,
       url: "",
     },
@@ -30,7 +33,7 @@ const Projects = () => {
       title: "Aiyyna",
       des: "Digital Infrastructure for Textile Business and provide Auto Reconciliation service",
       role: "Backend integration",
-      tech: "Node js, Express js, TypeScript, Redis, MongoDB",
+      tech: ["Node.js", "Express.js", "TypeScript", "Redis", "MongoDB"],
       src: aiyyna,
       url: "https://www.aiyyna.com/",
     },
@@ -38,7 +41,7 @@ const Projects = () => {
       title: "Copro",
       des: "Hire subcontractors and purchase construction materials online.",
       role: "Backend integration",
-      tech: "Node js, Express js, MongoDB",
+      tech: ["Node.js", "Express.js", "MongoDB"],
       src: copro,
       url: "https://copro.vercel.app/",
     },
@@ -65,6 +68,7 @@ const Projects = () => {
             role={project.role}
             tech={project.tech}
             url={project.url}
+            technologies={project.tech}
           />
         ))}
       </div>
