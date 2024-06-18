@@ -45,7 +45,7 @@ const Navbar = () => {
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />
-                <p className="text-sm text-gray-400 mt-2">
+                {/* <p className="text-sm text-gray-400 mt-2">
                   Highly skilled backend developer with 1+ year of experience
                   specializing in Node.js and Express.js. Possesses a strong
                   background in crafting elegant and efficient solutions to meet
@@ -53,7 +53,7 @@ const Navbar = () => {
                   detail-oriented, with a passion for writing clean and concise
                   code. Excels in collaborative environments and is always eager
                   to learn and grow.
-                </p>
+                </p> */}
               </div>
               <ul className="flex flex-col gap-4">
                 {navLinksdata.map((item) => (

@@ -41,7 +41,9 @@ const Contact = () => {
         body: JSON.stringify({
           name: username,
           email: email,
-          message: `for varship pokal ${message}`,
+          message: `subject: ${subject},
+                    message: ${message}`,
+          isFromVarship: true,
         }),
       })
         .then((response) => {
@@ -63,9 +65,7 @@ const Contact = () => {
         })
         .catch((error) => {
           console.error("There was a problem with the fetch operation:", error);
-          setErrMsg(
-            "There was an error while sending your message. Please try again later."
-          );
+          setErrMsg("You already sent a message");
         });
     }
   };
@@ -169,7 +169,7 @@ const Contact = () => {
                 <button
                   onClick={handleSend}
                   className="w-full h-12 bg-red-500 rounded-lg text-base text-white tracking-wider uppercase hover:text-white hover:border-[1px] hover:border-white border-transparent active:border-white"
->
+                >
                   Send Message
                 </button>
               </div>
