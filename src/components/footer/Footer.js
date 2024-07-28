@@ -6,7 +6,12 @@ const Footer = () => {
   return (
     <div className="w-full py-20 h-auto border-b-[1px] border-b-black grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-4 gap-8">
       <div className="w-full h-full flex flex-col gap-8">
-        <img className="w-32"style={{ marginLeft: '50px' }} src={logo} alt="logo" />
+        <img
+          className="w-32"
+          style={{ marginLeft: "50px" }}
+          src={logo}
+          alt="logo"
+        />
         <div className="flex gap-4">
           <span className="bannerIcon">
             <a
@@ -20,7 +25,7 @@ const Footer = () => {
           </span>
           <span className="bannerIcon">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/varship-pokal-582023235/"
               target="_blank"
               rel="noopener noreferrer"
               className="bannerIcon"
@@ -30,7 +35,7 @@ const Footer = () => {
           </span>
           <span className="bannerIcon">
             <a
-              href="https://www.github.com"
+              href="https://github.com/pokal-varship"
               target="_blank"
               rel="noopener noreferrer"
               className="bannerIcon"

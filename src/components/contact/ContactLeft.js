@@ -41,7 +41,7 @@ const ContactLeft = () => {
           </span>
           <span className="bannerIcon">
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/in/varship-pokal-582023235/"
               target="_blank"
               rel="noopener noreferrer"
               className="bannerIcon"
@@ -51,7 +51,7 @@ const ContactLeft = () => {
           </span>
           <span className="bannerIcon">
             <a
-              href="https://www.github.com"
+              href="https://github.com/pokal-varship"
               target="_blank"
               rel="noopener noreferrer"
               className="bannerIcon"
