@@ -25,7 +25,7 @@ const Footer = () => {
           </span>
           <span className="bannerIcon">
             <a
-              href="www.linkedin.com/in/varship-pokal"
+              href="https://www.linkedin.com/in/varship-pokal"
               target="_blank"
               rel="noopener noreferrer"
               className="bannerIcon"

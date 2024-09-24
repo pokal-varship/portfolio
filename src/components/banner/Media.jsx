@@ -26,7 +26,7 @@ const Media = () => {
             <FaInstagram />
           </a>
           <a
-            href="www.linkedin.com/in/varship-pokal"
+            href="https://www.linkedin.com/in/varship-pokal"
             target="_blank"
             rel="noopener noreferrer"
             className="bannerIcon"
