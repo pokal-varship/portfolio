@@ -14,10 +14,17 @@ const Resume = () => {
     const pdfUrl = `${process.env.PUBLIC_URL}/varship_resume.pdf`;
     saveAs(pdfUrl, "varship_resume.pdf");
   };
+  const startDate = new Date('December 2022');
+  const currentDate = new Date();
+  const diffInMilliseconds = currentDate - startDate;
+  const diffInYears = diffInMilliseconds / (1000 * 60 * 60 * 24 * 365);
+  const adjustedYears = diffInYears + (2 / 12);
+
   return (
     <section id="resume" className="w-full py-20 border-b-[1px] border-b-black">
       <div className="flex justify-center items-center text-center">
-        <Title title="1.5+ YEARS OF EXPERIENCE" des="My Resume" />
+        {/* Correctly handling the title prop */}
+        <Title title={`${adjustedYears.toFixed(1)}+ YEARS OF EXPERIENCE`} des="My Resume" />
       </div>
       <div>
         <ul className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
