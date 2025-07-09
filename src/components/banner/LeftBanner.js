@@ -27,7 +27,7 @@ const LeftBanner = () => {
           />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          Highly skilled backend developer with 1+ year of experience
+          Highly skilled backend developer with 4+ year of experience
           specializing in Node.js and Express.js. Possesses a strong background
           in crafting elegant and efficient solutions to meet diverse project
           requirements. Self-motivated and detail-oriented, with a passion for
